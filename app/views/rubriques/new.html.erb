@@ -1,0 +1,8 @@
+﻿<h1>New rubrique</h1>
+
+<%= form_for(@rubrique) do |f| %>
+  <%= render 'fields', :f => f %>
+  <div class="actions">
+    <%= f.submit "Add rubrique" %>
+  </div>
+<% end %>

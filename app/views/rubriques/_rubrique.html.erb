@@ -1,0 +1,11 @@
+﻿    <h2><%= rubrique.name %></h2>
+    <span class="description"><%= rubrique.description %></span>
+    <%= link_to 'Show', rubrique %>
+    <%= link_to 'Edit', edit_rubrique_path(rubrique), :method => :edit %>
+    <%= button_to 'Delete', rubrique, :method => :delete,
+                                       :confirm => 'You sure?',
+                                       :title => rubrique.name %>
+
+<% if @rubriques.empty? %>
+    <em>No rubriques found</em>
+<% end %>

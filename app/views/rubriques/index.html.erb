@@ -1,0 +1,11 @@
+﻿<h1>List rubrique</h1>
+
+<%= link_to 'New', new_rubrique_path %>
+
+<%= will_paginate %>
+
+<ul class="rubriques">
+  <%= render @rubriques %>
+</ul>
+
+<%= will_paginate %>
